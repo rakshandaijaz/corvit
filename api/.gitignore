@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / runnable
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-egg/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a tool
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-uninstall-log.txt
+conda-log.txt
+# Other logs
+*.log
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# MyPy
+.mypy_cache/
+
+# Pyright
+.pyright/
+
+# IDEs
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
