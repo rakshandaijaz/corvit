@@ -1,0 +1,226 @@
+FULL-STACK AI ASSISTANT / AGENTIC AI PROJECT
+Project Name: AI Assistant
+Student: Rakshanda Ijaz
+Project Type: Full-Stack Agentic AI Application
+
+1. Project Introduction
+My project is a Full-Stack AI Assistant that allows users to interact with an AI in three different ways:
+·Chat
+·Voice
+·Image Attachment
+The project combines AI agents, APIs, web development, voice interaction, and image processing into one application.
+The main goal is to create an end-to-end AI application that demonstrates the use of modern AI development tools and AI-assisted software engineering.
+
+2. Core Features
+2.1 Chat Feature
+The chat feature allows users to communicate with the AI through text.
+The user sends a message from the web application, the request goes to the backend API, and the AI generates a response.
+Workflow:
+User ? Web Interface ? FastAPI ? AI Model ? Response
+
+2.2 Voice Feature
+The voice feature allows users to communicate with the AI using their voice.
+I use LiveKit for real-time voice communication.
+The basic workflow is:
+User speaks ? LiveKit ? AI Agent ? AI Response ? Voice Output
+This makes the application more interactive than a normal text chatbot.
+
+2.3 Image Attachment Feature
+The image feature allows users to upload an image to the AI assistant.
+The application sends the image to a vision-capable AI model, which can analyze the image and provide a response.
+Workflow:
+User uploads image ? Frontend ? Backend API ? Vision AI Model ? AI Response
+
+3. Project Architecture
+The project follows a full-stack architecture consisting of three main parts:
+Frontend
+The frontend provides the user interface where users can:
+·Send chat messages
+·Use voice interaction
+·Upload images
+·View AI responses
+Backend
+The backend provides APIs for:
+·Chat
+·Image processing
+·AI communication
+·Application logic
+AI Agent
+The AI agent handles the interaction with the AI model and connects different capabilities of the application.
+Architecture Diagram
+                    AI ASSISTANT
+                         |
+        +----------------+----------------+
+        |                |                |
+       Chat             Voice           Image
+        |                |                |
+    Next.js           LiveKit        Image Upload
+        |                |                |
+        +----------------+----------------+
+                         |
+                      FastAPI
+                         |
+                     AI Agent
+                         |
+                  AI / Vision Model
+                         |
+                       Ollama
+
+
+4. Technologies Used
+Frontend
+·Next.js
+·React
+·TypeScript
+·Tailwind CSS
+Backend
+·Python
+·FastAPI
+·Uvicorn
+·Pytest
+·Ruff
+AI
+·Ollama
+·Gemma 3
+·Vision-capable AI model
+Voice
+·LiveKit
+·LiveKit Agents
+Development Tools
+·Claude Code
+·Git
+·GitHub
+·VS Code
+·Python UV
+
+5. Agentic AI Concept
+An AI agent is a system that can receive a task, process information, use available tools or capabilities, and produce an appropriate result.
+In this project, the AI agent connects the user's request with the required AI capability.
+For example:
+User Request
+     ?
+AI Agent
+     ?
+Determine required capability
+     ?
+Chat / Voice / Image
+     ?
+AI Model
+     ?
+Response
+
+This makes the project more than a simple chatbot.
+
+6. Agent Skills
+Agent Skills are reusable instructions, tools, or workflows that help an AI coding agent perform specific tasks.
+In this project, skills were used to help implement features such as:
+·Full-stack development
+·Voice integration
+·Image/photo handling
+·Verification and testing
+The project demonstrates how AI coding agents can assist developers in building software.
+
+7. Claude Code / AI Coding Agent
+Claude Code was used as an AI-assisted development tool.
+It helped with tasks such as:
+·Understanding the project structure
+·Implementing features
+·Connecting frontend and backend components
+·Adding image functionality
+·Checking project files
+·Providing verification commands
+·Finding and explaining errors
+This demonstrates the concept of AI-assisted software engineering.
+
+8. Image Processing Workflow
+The image feature works approximately as follows:
+User selects an image
+        ?
+Frontend receives image
+        ?
+Image sent to FastAPI
+        ?
+Backend processes request
+        ?
+Vision-capable AI model
+        ?
+AI analyzes image
+        ?
+Response returned
+        ?
+Response displayed to user
+
+The purpose of this feature is to allow the AI assistant to understand visual information instead of working only with text.
+
+9. Voice Workflow
+The voice feature uses LiveKit for real-time communication.
+User speaks
+     ?
+Microphone
+     ?
+LiveKit
+     ?
+AI Voice Agent
+     ?
+AI Model
+     ?
+Voice Response
+     ?
+User hears response
+
+This provides a more natural way to interact with the AI assistant.
+
+10. API Architecture
+The backend is built using FastAPI.
+The API acts as the communication layer between the frontend and AI services.
+Next.js Frontend
+       ?
+    HTTP/API
+       ?
+    FastAPI
+       ?
+   AI Services
+       ?
+ AI Model / Agent
+
+This architecture keeps the frontend, backend, and AI logic organized separately.
+
+11. GitHub Repository
+The complete project is maintained using Git and GitHub.
+Git is used for:
+·Tracking changes
+·Creating commits
+·Managing project versions
+GitHub is used for:
+·Hosting the source code
+·Project documentation
+·Sharing the project
+·Maintaining the project repository
+The repository contains the frontend, backend, AI-related code, configuration, and documentation.
+
+12. Testing and Verification
+Testing is important to make sure the application works correctly.
+The project uses tools such as:
+·Pytest
+·API verification
+·Image feature verification
+·Manual testing
+·Frontend testing
+The main features are tested individually and then tested together as an end-to-end application.
+
+13. Security
+Security is important when developing an AI application.
+API keys and secret information should not be uploaded to GitHub.
+Environment variables are used for sensitive configuration.
+For example:
+.env
+
+should remain private and should be included in:
+.gitignore
+
+This prevents API keys and other secrets from being exposed publicly.
+14. Conclusion
+The Full-Stack AI Assistant is an end-to-end Agentic AI application combining chat, voice, and image interaction.
+The project demonstrates how modern technologies such as Next.js, FastAPI, Ollama, LiveKit, AI vision models, Claude Code, Git, and GitHub can be combined to build a complete AI application.
+The project also demonstrates the use of AI coding agents and Agent Skills to assist in software development.
+The final goal is to provide users with one AI assistant that can understand text, voice, and images through a single application.
